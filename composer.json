@@ -1,0 +1,43 @@
+{
+    "name": "bleeld/think-https",
+    "description": "ThinkPHP 8 HTTP Client - API with native cURL",
+    "type": "library",
+    "keywords": [
+        "thinkphp",
+        "http",
+        "client",
+        "curl",
+        "guzzle",
+        "request"
+    ],
+    "homepage": "https://github.com/bleeld/think-https",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bleeld",
+            "email": "bleeld@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\http\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "think\\http\\Service"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
